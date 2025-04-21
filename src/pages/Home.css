@@ -1,0 +1,381 @@
+.home-container {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    background: #241e631c;
+    color: white;
+    position: relative;
+    border: 1px solid rgb(112, 112, 112);
+    overflow:scroll ;
+    border-radius: 12px;
+    border: 1px solid grey;
+  }
+
+  .home-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hedder {
+    position: relative;
+    height: 300px;
+    background-image: url('/src/assets/nsbmbg.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(63, 182, 93);
+    text-align: center;
+    filter: blur(0px);
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    margin-bottom: 20px;
+  }
+  .hedder.blurred {
+    filter: blur(3px);
+    transform: scale(1.02);
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    background-color: #1b4d3e23; /* Or your navbar color */
+    z-index: 1000;
+  }
+
+  
+  .home-sidebar {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width: 220px;
+    background: #b5ceb017;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 6px;
+    position: fixed;
+    border: 1px solid grey;
+  }
+
+  .my-slider {
+    position: absolute;
+    left: 0;
+    top: 700px;
+    width: 220px;
+    background: #8eb4862d;
+    padding: 20px;
+  }
+  .my-slider h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 1px;
+    font-family: Cascadia Code;
+  }
+  .my-p p{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .sidebar-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 1px;
+    font-family: Cascadia Code;
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-link {
+    margin: 10px 0;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    
+    background-color: #1b234d3d;
+    text-align: center;
+    font-family: Cascadia Code;
+    transition: transform 0.3s ease;
+    color: white;
+    border: 1px solid grey;
+  }
+
+  
+  .sidebar-link:hover {
+    color: black;
+    transition: background 0.3s;
+    transform: translateY(-3px);
+    background: white;
+    font-weight: 400;
+  }
+  
+  .home-content {
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-top: 90px;
+    padding: 10px 10px;
+    text-align: center;
+    flex: 1;
+    border-left: solid grey 1px;
+    border-right: solid grey 1px;
+  }
+  
+  .home-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-family: Century Gothic;
+  }
+  
+  .home-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    font-family: Century Gothic;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .card {
+    background:#ced4d005;
+    padding: 25px;
+    border: 1px solid grey;
+    color: #ffffff;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    
+  }
+  
+  .card:hover {
+    transform: translateY(-15px);
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: Century Gothic;
+    border-bottom: 1px solid grey;
+  }
+  
+  .card p {
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 15px;
+    color: rgb(240, 240, 240);
+    font-family: Cascadia Code;
+  }
+  
+  .card button {
+    padding: 10px 20px;
+    background-color: #1b4d3e27;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: Cascadia Code;
+  }
+  
+  .card button:hover {
+    background-color: #218838;
+  }
+  
+  .home-footer {
+    background: #000000;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+    height: 60px;
+    border-top:1px solid #ffffff;
+  }
+
+  .logo-imgs {
+    width: 250px;
+    height: auto;
+  }
+
+  .right-slider {
+    position: absolute;
+    right: 5px;
+    top: 100px;
+    width: 220px;
+    background: #8eb48600;
+    margin-right: 10px;
+    z-index: 1;
+  }
+  .right-slider-content{
+    position: fixed;
+    background:#ced4d01e;
+    border-radius: 4px;
+    margin-top: 315px;
+    width: 230px;
+    padding: 10px;
+    border: 1px solid grey;
+  }
+  .right-slider h5 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 1px;
+    font-family: Cascadia Code;
+  }
+  
+  .right-slider-content p {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    font-family: Cascadia Code;
+  }
+  
+  
+
+  @media screen and (max-width: 790px){
+    .home-sidebar{
+      display: none;
+    }
+    .home-content{
+      margin: 0px;
+      margin-left: 25px;
+    }
+    
+  }
+
+  @media screen and (max-width: 1024px){
+    .home-content{
+      margin-right: 25px;
+      border: none;
+    }
+    .right-slider{
+      display: none;
+    }
+    .my-slider{
+      display: none;
+    }
+    .Navbar {
+      width: 100%;
+      height: 120px;
+    }
+  }
+
+  @media screen and (max-width: 1180px){
+    .nav-links {
+      display: none;
+    }
+    .navbar-right {
+      display:block;
+    }
+  }
+
+  @media screen and (max-width: 1530px){
+    .navbar-right {
+      display: none;
+    }
+  }
+
+  .profile {
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+    height: auto;
+    width: auto;
+    background: #ced4d015;
+    position: fixed;
+    border: 1px solid grey;
+  
+    .profileImg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+  
+      img {
+        border-radius: 50%;
+        border: 1px solid gray;
+        height: 90px;
+        width: auto;
+      }
+  
+      .profileName {
+        text-align: center;
+        font-family: Cascadia Code;
+        font-size: 16px;
+        font-weight: 500;
+        word-break: break-word;
+      }
+  
+      .profileEmail {
+        text-align: center;
+        font-family: Cascadia Code;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 220px;
+        color: rgb(168, 168, 168);
+        word-break: break-word;
+        overflow-wrap: break-word;
+      }
+  
+      .profileBtn {
+        padding: 10px 30px;
+        margin: 10px;
+        background-color: #1b4d3e00;
+        border: 1px solid gray;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: Cascadia Code;
+      }
+  
+      .profileBtn:hover {
+        background: white;
+        color: black;
+      }
+    }
+  
+    .ProfileBtn2 {
+      padding: 10px 30px;
+      margin: 10px;
+      background-color: #1B4D3E;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-family: Cascadia Code;
+    }
+  
+    .ProfileBtn2:hover {
+      background: green;
+    }
+  }
+  
+  

@@ -1,0 +1,54 @@
+.start-election-container {
+  background-color: #29101018;
+  border: 1px solid grey;
+  padding: 30px 40px;
+  border-radius: 12px;
+  }
+  
+  .start-election-card {
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .start-election-card h2 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .start-election-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .start-election-card button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 200;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .start-election-card button:hover {
+    background-color: #c92c3b;
+    
+  }
+  
+  .message {
+    margin-top: 12p;
+    font-weight: 100;
+    color: #b1b1b1;
+  }
+  
