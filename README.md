@@ -1,7 +1,7 @@
 # Face-Recognition-Voting-Web-Application
 Face Recognition Voting Web Application
 
-             --FACE RECOGNITION VOTING SYSTEM--
+             FACE RECOGNITION VOTING SYSTEM
 
 ```bash
 create-react-app final-voting-system
@@ -20,6 +20,7 @@ npm install firebase
 ```bash
 import { initializeApp } from "firebase/app";
 ```
+```bash
 const firebaseConfig = {
   apiKey: "AIzaSyBQXa9B22A-I56_WIwcsE_zBb7UXHl-0DU",
   authDomain: "final-voting-system-1adee.firebaseapp.com",
@@ -28,7 +29,8 @@ const firebaseConfig = {
   messagingSenderId: "1045020801698",
   appId: "1:1045020801698:web:c77c4add1d347769e275fb"
 };
-bash
+```
+
 const app = initializeApp();
 firebase-voting-system
 firebase Get start
