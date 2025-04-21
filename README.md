@@ -3,19 +3,23 @@ Face Recognition Voting Web Application
 
              --FACE RECOGNITION VOTING SYSTEM--
 
-# create-react-app final-voting-system
-# cd final-voting-system
-# npm install
+```bash
+create-react-app final-voting-system
+cd final-voting-system
+npm install
 
-# npm install react-router-dom
+npm install react-router-dom
 
-# npm install -g firebase-tools
-# npm install firebase
+npm install -g firebase-tools
+npm install firebase
+```
 
-create firebase folder and firebase.js file
 
+
+## create firebase folder and firebase.js file
+```bash
 import { initializeApp } from "firebase/app";
-
+```
 const firebaseConfig = {
   apiKey: "AIzaSyBQXa9B22A-I56_WIwcsE_zBb7UXHl-0DU",
   authDomain: "final-voting-system-1adee.firebaseapp.com",
@@ -24,28 +28,31 @@ const firebaseConfig = {
   messagingSenderId: "1045020801698",
   appId: "1:1045020801698:web:c77c4add1d347769e275fb"
 };
-
+bash
 const app = initializeApp();
-# firebase-voting-system
+firebase-voting-system
 firebase Get start
 * Authentication
 * Firebase Database
 * firebase Storage
 
-# firebase login
-# firebase init
-# firebase deploy
+```bash
+firebase login
+firebase init
+firebase deploy
+```
 
 public folder add to face-api.js Module folder
-# npm install face-api.js
-
+```bash
+npm install face-api.js
+```
 file location
 src/firebase/firebaseConfig.js
 src/assets/images
 
 
 
-pages ->
+## pages ->
 1. Admin Register
 2. Admin Login
 3. Home 
@@ -56,9 +63,12 @@ pages ->
 5. Candidate Register
 6. Candidate Manager
 
-# npm install react-icons
+```bash
+npm install react-icons
+```
 7. Start Election
-8. Voter Identify 
+8. Voter Identify
+9. ba
 
 
 
