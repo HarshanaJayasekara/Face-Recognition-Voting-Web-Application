@@ -5,18 +5,19 @@ import * as faceapi from 'face-api.js';
 import { db } from '../../firebase/firebaseConfig';
 import { getDocs, collection } from 'firebase/firestore';
 import './VoterIdentify.css';
-import { FaPowerOff } from 'react-icons/fa'; // End election icon
+import { FaPowerOff } from 'react-icons/fa';
 
 const VoterIdentify = () => {
   const webcamRef = useRef(null);
+  const navigate = useNavigate();
+
   const [uniId, setUniId] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [showPasswordPrompt, setShowPasswordPrompt] = useState(false);
   const [adminPassword, setAdminPassword] = useState('');
-  const navigate = useNavigate();
 
-  // Load face-api models
+  // Load face-api.js models and handle click outside dropdown
   useEffect(() => {
     const loadModels = async () => {
       const MODEL_URL = '/models';
@@ -32,7 +33,15 @@ const VoterIdentify = () => {
         setMessage('Error loading face recognition models.');
       }
     };
+    const handleOutsideClick = (e) => {
+      if (!e.target.closest('.dropdown-box') && !e.target.closest('.top-right-icon')) {
+        setShowPasswordPrompt(false);
+      }
+    };
+
     loadModels();
+    document.addEventListener('click', handleOutsideClick);
+    return () => document.removeEventListener('click', handleOutsideClick);
   }, []);
 
   const handleIdentify = async () => {
@@ -60,10 +69,8 @@ const VoterIdentify = () => {
       }
 
       const inputDescriptor = detection.descriptor;
-
       const voterSnapshot = await getDocs(collection(db, 'voters'));
       const allVoters = voterSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-
       const matchedVoter = allVoters.find(v => v.uniId === uniId && v.faceDescriptors?.length === 384);
 
       if (!matchedVoter) {
@@ -78,9 +85,7 @@ const VoterIdentify = () => {
         storedDescriptors.push(new Float32Array(descriptor));
       }
 
-      const distances = storedDescriptors.map(d =>
-        faceapi.euclideanDistance(inputDescriptor, d)
-      );
+      const distances = storedDescriptors.map(d => faceapi.euclideanDistance(inputDescriptor, d));
       const bestMatch = Math.min(...distances);
 
       console.log('Matching distance:', bestMatch);
@@ -97,7 +102,6 @@ const VoterIdentify = () => {
       } else {
         setMessage('❌ Face does not match your ID.');
       }
-
     } catch (err) {
       console.error('Identification error:', err);
       setMessage('❌ An error occurred during verification.');
@@ -108,7 +112,7 @@ const VoterIdentify = () => {
 
   const handleAdminSubmit = () => {
     if (adminPassword === 'admin123') {
-      navigate('/reset-election');
+      navigate('/StartElection');
     } else {
       alert('❌ Incorrect admin password.');
     }
@@ -118,32 +122,29 @@ const VoterIdentify = () => {
 
   return (
     <div className="identify-page">
-      {/* Admin End Election Button */}
-      <div className="top-right-icon" onClick={() => setShowPasswordPrompt(true)}>
+      <div className="top-right-icon" onClick={() => setShowPasswordPrompt(!showPasswordPrompt)}>
         <FaPowerOff size={24} title="End Election" />
       </div>
 
       {showPasswordPrompt && (
-        <div className="admin-password-modal" onClick={() => setShowPasswordPrompt(false)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <h4>Enter Admin Password</h4>
-            <input
-              type="password"
-              value={adminPassword}
-              onChange={(e) => setAdminPassword(e.target.value)}
-              placeholder="Admin Password"
-              className="password-input"
-            />
-            <div className="modal-actions">
-              <button onClick={handleAdminSubmit}>Submit</button>
-              <button onClick={() => setShowPasswordPrompt(false)}>Cancel</button>
-            </div>
+        <div className="dropdown-box" onClick={(e) => e.stopPropagation()}>
+          <h4>Enter Admin Password</h4>
+          <input
+            type="password"
+            value={adminPassword}
+            onChange={(e) => setAdminPassword(e.target.value)}
+            placeholder="Admin Password"
+          />
+          <div className="dropdown-actions">
+            <button onClick={handleAdminSubmit}>Submit</button>
+            <button onClick={() => setShowPasswordPrompt(false)}>Cancel</button>
           </div>
         </div>
       )}
 
       <div className="identify-container">
         <h2>🧑‍💼 Voter Identification</h2>
+
         <Webcam
           ref={webcamRef}
           screenshotFormat="image/jpeg"
@@ -158,6 +159,7 @@ const VoterIdentify = () => {
           value={uniId}
           onChange={(e) => setUniId(e.target.value)}
           className="input-box"
+          id='in-box'
         />
 
         <button onClick={handleIdentify} className="btn-primary" disabled={loading}>

@@ -1,27 +1,27 @@
 /* VoterIdentify.css */
 
-
 .identify-container {
     max-width: 500px;
     margin: auto;
     text-align: center;
     padding: 2rem;
-    background-color: #f9fafb;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.801);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    margin-top: 10px;
   }
 
   .identify-container h2{
     font-family: Century Gothic;
-    font-weight: normal;
+    font-weight: 200;
+    color: black;
   }
   
   .webcam {
     height: auto;
     width: 100%;
-    border: 1px solid #3b3b3b;
-    border-radius: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
     margin-bottom: 1rem;
   }
   
@@ -30,15 +30,20 @@
     padding: 0.75rem;
     margin-top: 1rem;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #e0e0e0;
     font-size: 1rem;
     font-family: Cascadia Code;
   }
+
+  #in-box{
+    color: black;
+  }
   
   .btn-primary {
-    background-color: #4F46E5;
+    background-color: green;
     color: white;
-    padding: 1.75rem 2.5rem;
+    font-family: Cascadia Code;
+    padding: 1rem 2.5rem;
     margin-top: 1rem;
     border-radius: 5px;
     border: none;
@@ -48,12 +53,13 @@
   }
   
   .btn-primary:hover {
-    background-color: #3b3be8;
+    background-color: black;
+    color: white;
   }
   
   .message {
     margin-top: 1rem;
-    font-weight: bold;
+    font-weight: 200;
     color: #e74c3c;
     font-family: Cascadia Code;
   }
@@ -62,7 +68,7 @@
     top: 15px;
     right: 20px;
     cursor: pointer;
-    color: #e11d48;
+    color: #e11d1d;
   }
   
   .admin-password-modal {
@@ -91,6 +97,7 @@
     width: 100%;
     border-radius: 6px;
     border: 1px solid #ccc;
+    cursor: pointer;
   }
   
   .modal-actions {
@@ -111,4 +118,55 @@
   .modal-actions button:last-child {
     background: #6b7280;
   }
+
+
+
+  .dropdown-box {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 1rem;
+    transition: opacity 0.2s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dropdown-box.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+  
+  .dropdown-box input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .dropdown-actions button {
+    padding: 8px 14px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .dropdown-actions button:last-child {
+    background: #6b7280;
+  }
+  
   

@@ -18,6 +18,8 @@ import CandidateManager from './pages/candidate/CandidateManager';
 // Start Election
 import StartElection from '../src/pages/election/ElectionStart';
 import VoterIdentify from '../src/pages/election/VoterIdentify';
+import CandidateList from '../src/pages/election/CandidatesList';
+import CandidateProfile from './pages/election/CandidateProfile';
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
           {/* Start Election */}
           <Route path='/StartElection' element={<StartElection />} />
           <Route path='/VoterIdentify' element={<VoterIdentify />} />
+          <Route path='/CandidateList' element={<CandidateList />} />
+          <Route path='/CandidateProfile/:id' element={<CandidateProfile />} />
           
 
 
