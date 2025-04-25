@@ -121,3 +121,11 @@ npm install react-icons
 8. Voter Identify
 9. Candidate List
 10. Candidate Profile
+
+```bash
+User Dashboard
+src/pages/user/userHome
+```
+
+11. User Dashboard
+12. Voter list
