@@ -27,6 +27,10 @@ import ThankYou from './pages/election/ThankYou';
 import VoteCountPage from '../src/pages/result/VoteCountPage';
 import ResetElection from '../src/pages/result/ResetElection';
 
+// user home page
+import Homepage from './pages/user/userHome';
+import VoterList from './pages/user/voterList';
+
 function App() {
   return (
     <div className="container">
@@ -58,6 +62,10 @@ function App() {
           {/* Vote Counting */}
           <Route path='/VoteCountPage' element={<VoteCountPage />} />
           <Route path='/ResetElection' element={<ResetElection />} />
+
+          {/* user home page */}
+          <Route path='/Homepage'  element={<Homepage />} />
+          <Route path='/VoterList' element={<VoterList />} />
           
 
 
