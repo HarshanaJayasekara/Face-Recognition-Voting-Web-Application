@@ -1,0 +1,68 @@
+
+.voter-list-container{
+  height: 90vh;
+  width: 100%;
+}
+
+.voter-list-header{
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 60%;
+}
+
+.voter-list-table{
+  width: 60%;
+  height: 60vh;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 0px auto;
+  padding: 10px;
+  background-color: rgba(34, 29, 71, 0.24);
+  overflow: scroll;
+}
+
+.voter-list-table::-webkit-scrollbar {
+  display: none;
+}
+
+
+  h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input styling */
+  input {
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(167, 167, 167, 0.041);
+  }
+
+
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #383838;
+    color: #ffffff;
+  }
+  
+  th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  
+  
