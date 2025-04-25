@@ -66,7 +66,7 @@ useEffect(() => {
     },
     {
       title: 'Election Results',
-      path: '/results',
+      path: '/VoteCountPage',
       description: 'View real-time voting results and final election summaries.',
     },
     {
@@ -80,8 +80,8 @@ useEffect(() => {
       description: 'Update and manage voter and candidate profiles securely.',
     },
     {
-      title: 'reset-election',
-      path: '/reset-election',
+      title: 'Result Reset',
+      path: '/ResetElection',
       description: 'Overview of system statistics including registration counts and election status.',
     },
     {

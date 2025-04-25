@@ -66,9 +66,13 @@
   .top-right-icon {
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 15px;
     cursor: pointer;
     color: #e11d1d;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 5px;
+    height: 35px;
+    border-radius: 30%;
   }
   
   .admin-password-modal {

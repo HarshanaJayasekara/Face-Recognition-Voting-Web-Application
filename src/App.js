@@ -20,6 +20,12 @@ import StartElection from '../src/pages/election/ElectionStart';
 import VoterIdentify from '../src/pages/election/VoterIdentify';
 import CandidateList from '../src/pages/election/CandidatesList';
 import CandidateProfile from './pages/election/CandidateProfile';
+import VotePage from './pages/election/VotePage';
+import ThankYou from './pages/election/ThankYou';
+
+// Vote Counting
+import VoteCountPage from '../src/pages/result/VoteCountPage';
+import ResetElection from '../src/pages/result/ResetElection';
 
 function App() {
   return (
@@ -46,6 +52,12 @@ function App() {
           <Route path='/VoterIdentify' element={<VoterIdentify />} />
           <Route path='/CandidateList' element={<CandidateList />} />
           <Route path='/CandidateProfile/:id' element={<CandidateProfile />} />
+          <Route path='/VotePage' element={<VotePage />} />
+          <Route path='/ThankYou' element={<ThankYou />} />
+
+          {/* Vote Counting */}
+          <Route path='/VoteCountPage' element={<VoteCountPage />} />
+          <Route path='/ResetElection' element={<ResetElection />} />
           
 
 
