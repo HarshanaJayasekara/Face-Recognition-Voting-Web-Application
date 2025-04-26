@@ -129,3 +129,15 @@ src/pages/user/userHome
 
 11. User Dashboard
 12. Voter list
+
+```bash
+npm install react-leaflet leaflet
+```
+13. Voting Location
+14. Rules and Guideline
+
+```bash
+npm install emailjs-com
+```
+
+15.
