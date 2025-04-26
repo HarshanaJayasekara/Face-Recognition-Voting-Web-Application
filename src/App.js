@@ -30,6 +30,9 @@ import ResetElection from '../src/pages/result/ResetElection';
 // user home page
 import Homepage from './pages/user/userHome';
 import VoterList from './pages/user/voterList';
+import VotingLocations from './pages/user/VotingLocations';
+import RulesGuidelines from './pages/user/RulesGuidelines';
+import IdeasComplaints from './pages/user/IdeasComplaints';
 
 function App() {
   return (
@@ -66,7 +69,9 @@ function App() {
           {/* user home page */}
           <Route path='/Homepage'  element={<Homepage />} />
           <Route path='/VoterList' element={<VoterList />} />
-          
+          <Route path='/VotingLocations' element={<VotingLocations />} />
+          <Route path='/RulesGuidelines' element={<RulesGuidelines />} />
+          <Route path='/IdeasComplaints' element={<IdeasComplaints />} />
 
 
 

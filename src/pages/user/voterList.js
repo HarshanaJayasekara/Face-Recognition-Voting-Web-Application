@@ -3,6 +3,7 @@ import { db } from '../../firebase/firebaseConfig';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import './voterList.css'; // Import your CSS file for styling
 import Navbar from './userNavbar';
+import BackButton from './components/BackButton';
 
 const VoterList = () => {
   const [voters, setVoters] = useState([]);
@@ -35,6 +36,7 @@ const VoterList = () => {
   return (
     <div className='voter-list-container'>
        <Navbar />
+       <BackButton />
       <div className='voter-list-header'>
       <h1>Voter List</h1>
       <input

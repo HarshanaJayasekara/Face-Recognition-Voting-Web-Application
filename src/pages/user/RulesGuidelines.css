@@ -1,0 +1,45 @@
+.rules-guidelines-container{
+    width: 90vw;
+    height: 90vh;
+    background-color: #00000000;
+    border: none;
+    margin-top: 0;
+  }
+  
+ 
+
+
+.rules-page {
+  margin: 20px;
+    padding: 20px;
+    height: 76vh;
+    background-color: #00000023;
+    border: 1px solid #ddd;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 8px;
+
+  }
+  
+  h1, h2 {
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+    color: gray;
+  }
+  
+  .note {
+    margin-top: 20px;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
