@@ -15,17 +15,15 @@
     margin-right: 10px;
     margin-left: 10px;
     border: none;
-    height: 40vh;
     margin-top: 10px;
     text-align: center;
 
     h2{
-        color: white;
+        color: rgb(255, 255, 255);
         font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
         font-size: 48px;
-    font-weight: 600;
-    letter-spacing: -.003em;
-    color: #6e6e73;
+        font-weight: 600;
+        letter-spacing: -.003em;
     }
     p{
         color: white;

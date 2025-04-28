@@ -39,7 +39,7 @@ useEffect(() => {
 
   const handleLogout = async () => {
     await signOut(auth);
-    navigate('/AdminLogin');
+    navigate('/');
   };
   //! navbar profile end
 

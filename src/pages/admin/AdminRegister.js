@@ -10,6 +10,7 @@ import {
   signInWithPopup,
 } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
+import BackButton from '../user/components/BackButton';
 
 const AdminRegister = () => {
   const navigate = useNavigate();
@@ -51,7 +52,7 @@ const AdminRegister = () => {
           createdAt: new Date()
         });
 
-        navigate('/');
+        navigate('/AdminLogin');
       } catch (err) {
         setErrorMsg(err.message);
       }
@@ -79,13 +80,15 @@ const AdminRegister = () => {
   };
 
   return (
+    <div>
+      <BackButton />
     <div className="register-container">
       <div className="register-left">
         <img src={logo} alt="NSBM Logo" className="logo" />
         <h1>Welcome to University of Plymouth</h1>
         <p>This is University of Plymouth’s official platform for election registration. Only administration department members are allowed to register here.</p>
         <div className='log'>
-          <p>Already have an account? <Link to="/">Sign in →</Link></p>
+          <p>Already have an account? <Link to="/AdminLogin">Sign in →</Link></p>
         </div>
       </div>
 
@@ -160,6 +163,7 @@ const AdminRegister = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };

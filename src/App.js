@@ -8,8 +8,6 @@ import AdminRegister from './pages/admin/AdminRegister';
 // Home page
 import Home from './pages/Home';
 
-import Homes from './pages/Home/Home';
-
 // Voter  & Candidate pages
 import VoterRegister from './pages/voter/VoterRegister';
 import CandidateRegister from './pages/candidate/CandidateRegister';
@@ -34,17 +32,18 @@ import VotingLocations from './pages/user/VotingLocations';
 import RulesGuidelines from './pages/user/RulesGuidelines';
 import IdeasComplaints from './pages/user/IdeasComplaints';
 import AboutUsPage from './pages/user/AboutUs';
+import Candidators from './pages/user/Candidators';
 
 function App() {
   return (
     <div className="container">
       <Router>
         <Routes>
-          {/* test home page */}
-          <Route path='/Homes' element={<Homes />} />
+
+          <Route path="/" element={<Homepage />} />
 
           {/* Admin Routes */}
-          <Route path="/" element={<AdminLogin />} />
+          <Route path="/AdminLogin" element={<AdminLogin />} />
           <Route path="/AdminRegister" element={<AdminRegister />} />
 
           {/* home page */}
@@ -74,6 +73,7 @@ function App() {
           <Route path='/RulesGuidelines' element={<RulesGuidelines />} />
           <Route path='/IdeasComplaints' element={<IdeasComplaints />} />
           <Route path='/AboutUs' element={<AboutUsPage />} />
+          <Route path='/Candidators' element={<Candidators />} />
 
 
           

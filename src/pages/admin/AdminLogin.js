@@ -4,6 +4,7 @@ import logo from '../../assets/nsbm.png';
 import { auth } from '../../firebase/firebaseConfig';
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import BackButton from '../user/components/BackButton';
 
 const AdminLogin = () => {
   const [email, setEmail] = useState('');
@@ -33,6 +34,8 @@ const AdminLogin = () => {
   };
 
   return (
+    <div>
+      <BackButton />
     <div className="black">
       <div className="login-container">
         <div className="login-header">
@@ -97,6 +100,7 @@ const AdminLogin = () => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };

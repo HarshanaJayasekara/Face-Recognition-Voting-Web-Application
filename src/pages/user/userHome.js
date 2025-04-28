@@ -17,8 +17,8 @@ const Homepage = () => {
       description: 'Register candidates with complete profile information, including manifesto and facial recognition.',
     },
     {
-      title: 'Candidator List',
-      path: '/results',
+      title: 'Candidate List',
+      path: '/Candidators',
       description: 'View real-time voting results and final election summaries.',
     },
     {

@@ -11,14 +11,33 @@
   margin: 20px;
     padding: 20px;
     height: 76vh;
-    background-color: #00000023;
-    border: 1px solid #ddd;
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
     text-align: center;
     border-radius: 8px;
 
+  }
+
+  .rules-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #00000023;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+
+    h2{
+      font-family: Century Gothic;
+      font-weight: 100;
+    }
+
+    ul{
+      list-style-type: none;
+      li{
+        color: #c0c0c0;
+        font-family: Cascadia Code;
+      }
+    }
   }
   
   h1, h2 {
@@ -36,8 +55,9 @@
   }
   
   .note {
+    font-size: 12px;
     margin-top: 20px;
-    color: #007BFF;
+    color: #3999ff9a;
     font-weight: bold;
   }
   

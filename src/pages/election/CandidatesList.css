@@ -87,9 +87,9 @@
 .manager-party,
 .manager-description {
   font-size: 0.95rem;
-  color: #555;
+  color: #363636;
   margin: 0.5rem 0;
-  font-family: 'Century Gothic', sans-serif;
+  font-family: Cascadia Code;
 }
 
 .manager-actions {

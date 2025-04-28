@@ -53,7 +53,7 @@ const Navbar = () => {
             <button id="logout-btn" onClick={handleLogout}>Logout</button>
           </div>
         ) : (
-          <button id="login-btn" onClick={() => navigate('/')}>Login</button>
+          <button id="login-btn" onClick={() => navigate('/AdminLogin')}>Login</button>
         )}
       </div>
     </nav>

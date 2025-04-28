@@ -7,14 +7,14 @@ import {
   updateDoc,
   doc,
 } from "firebase/firestore";
-import "./CandidateManager.css";
-import LeftSidebar from '../../components/LeftSidebar';
-import RightSlider from '../../components/RightSlider';
-import Navbar from "../../components/Navbar";
+import "./Candidators.css";
+import BackButton from "./components/BackButton";
+import Navbar from './userNavbar';
+
 
 const ADMIN_PASSWORD = "admin123"; // Replace with secure check in production
 
-const CandidateManager = ({user, showImage, setShowImage, handleLogout, navCards}) => {
+const Candidators = ({}) => {
   const [candidates, setCandidates] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [editingId, setEditingId] = useState(null);
@@ -74,12 +74,12 @@ const CandidateManager = ({user, showImage, setShowImage, handleLogout, navCards
   };
 
   return (
-    <div>
-      <Navbar />
-      <LeftSidebar navCards={navCards} />
-    <div className="new">
+    <div className="cont">
+        <Navbar />
+        <BackButton />
+    <div id="new">
       
-      <div className="heder">
+      <div id="heder">
       <h2 className="manager-title">Candidate Manager</h2>
 
       <input
@@ -141,10 +141,7 @@ const CandidateManager = ({user, showImage, setShowImage, handleLogout, navCards
                 <h3 className="manager-name">{candidate.name}</h3>
                 <p className="manager-party">Party: {candidate.party}</p>
                 <p className="manager-description">{candidate.description}</p>
-                <div id="manager-actions">
-                  <button onClick={() => handleEditClick(candidate)} className="manager-btn edit">Edit</button>
-                  <button onClick={() => handleDelete(candidate.id)} className="manager-btn delete">Delete</button>
-                </div>
+                
               </>
             )}
           </div>
@@ -153,9 +150,8 @@ const CandidateManager = ({user, showImage, setShowImage, handleLogout, navCards
       </div>
     </div>
     </div>
-    <RightSlider user={user} showImage={showImage} setShowImage={setShowImage} handleLogout={handleLogout} />
     </div>
   );
 };
 
-export default CandidateManager;
+export default Candidators;

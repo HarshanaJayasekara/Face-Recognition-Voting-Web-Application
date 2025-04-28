@@ -3,9 +3,7 @@
   max-width: 600px;
   margin-top: 250px;
   margin: auto;
-  background-color: #f9f9f900;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -22,6 +20,7 @@ p {
 .form-container {
   display: flex;
   flex-direction: column;
+  border: none;
 }
 
 input, textarea, select {

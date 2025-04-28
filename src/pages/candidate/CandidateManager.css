@@ -1,15 +1,14 @@
 .new {
   display: flex;
-    height: 90vh;
+    height: 80vh;
     flex-direction: column;
     color: white;
     position: relative;
     overflow:scroll ;
 }
 
-.manager-container {
+#manager-container {
     width: 900px;
-    margin-top: 200px;
     overflow: scroll;
     margin-bottom: 10px;
   }
@@ -18,14 +17,14 @@
     display: none;
   }
   
-  .manager-container::-webkit-scrollbar {
+  #manager-container::-webkit-scrollbar {
     display: none;
   }
 
   .heder {
-    position: fixed;
     width: 920px;
-    margin-top: 100px;
+    height: auto;
+    margin-top: 50px;
   }
 
   .manager-list {
@@ -68,7 +67,7 @@
   
   .manager-img {
     width: auto;
-    height: 150px;
+    height: 160px;
     border-radius: 8px;
     object-fit: cover;
   }
@@ -89,7 +88,7 @@
   .manager-description {
     font-size: 14px;
     font-weight: 100;
-    color: #d6d6d6;
+    color: #2b2b2b;
     margin: 6px 0;
     font-family: Century Gothic;
     display: -webkit-box;
@@ -97,6 +96,8 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: left;
+    font-family: Cascadia Code;
   }
   
   .manager-actions {
