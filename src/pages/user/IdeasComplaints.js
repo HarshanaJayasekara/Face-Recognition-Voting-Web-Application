@@ -3,6 +3,8 @@ import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../firebase/firebaseConfig';
 import emailjs from 'emailjs-com';
 import './IdeasComplaints.css';
+import Navbar from './userNavbar';
+import BackButton from './components/BackButton';
 
 // npm install emailjs-com
 // https://www.emailjs.com/
@@ -63,8 +65,11 @@ const IdeasComplaints = () => {
   };
 
   return (
+    <div className='cont'>
+      <Navbar />
+      <BackButton />
     <div className="ideas-complaints-page">
-      <h1>💡 Ideas & Complaints</h1>
+      <h1>Ideas & Complaints</h1>
       <p>Submit your innovative ideas or complaints to help us improve!</p>
 
       <form onSubmit={handleSubmit} className="form-container">
@@ -102,6 +107,7 @@ const IdeasComplaints = () => {
 
       {success && <p className="success-msg">{success}</p>}
       {error && <p className="error-msg">{error}</p>}
+    </div>
     </div>
   );
 };

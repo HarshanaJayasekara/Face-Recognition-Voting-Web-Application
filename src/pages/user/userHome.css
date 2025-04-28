@@ -11,15 +11,21 @@
     height: 80vh;
 }
 
-.home-content{
+#home-content{
     margin-right: 10px;
     margin-left: 10px;
     border: none;
     height: 40vh;
     margin-top: 10px;
+    text-align: center;
 
     h2{
         color: white;
+        font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    color: #6e6e73;
     }
     p{
         color: white;
@@ -33,14 +39,18 @@
     }
 }
 
-.card-grid{
+#card-grid{
     overflow: scroll;
     padding: 20px;
     margin-left: 10%;
     margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
 }
 
-.card-grid::-webkit-scrollbar {
+#card-grid::-webkit-scrollbar {
     display: none;
   }
 

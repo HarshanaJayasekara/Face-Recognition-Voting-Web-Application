@@ -2,9 +2,10 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import Navbar from './userNavbar';
+import BackButton from './components/BackButton';
 import L from 'leaflet';
 import './VotingLocations.css'; 
-import BackButton from './components/BackButton';
+
 
 // Define custom icons for each location
 const icons = {

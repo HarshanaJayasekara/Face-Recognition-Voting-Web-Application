@@ -33,6 +33,7 @@ import VoterList from './pages/user/voterList';
 import VotingLocations from './pages/user/VotingLocations';
 import RulesGuidelines from './pages/user/RulesGuidelines';
 import IdeasComplaints from './pages/user/IdeasComplaints';
+import AboutUsPage from './pages/user/AboutUs';
 
 function App() {
   return (
@@ -72,7 +73,7 @@ function App() {
           <Route path='/VotingLocations' element={<VotingLocations />} />
           <Route path='/RulesGuidelines' element={<RulesGuidelines />} />
           <Route path='/IdeasComplaints' element={<IdeasComplaints />} />
-
+          <Route path='/AboutUs' element={<AboutUsPage />} />
 
 
           

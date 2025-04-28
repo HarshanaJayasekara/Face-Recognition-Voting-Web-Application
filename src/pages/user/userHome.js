@@ -37,17 +37,13 @@ const Homepage = () => {
         description: 'Enroll eligible voters by collecting personal details and capturing face data for verification.',
       },
       {
-        title: 'Idea & Complain',
+        title: 'Contact Us',
         path: '/IdeasComplaints',
         description: 'Enroll eligible voters by collecting personal details and capturing face data for verification.',
       },
       {
-        title: 'Contact',
-        path: '/voter-register',
-        description: 'Enroll eligible voters by collecting personal details and capturing face data for verification.',
-      },{
         title: 'About Us',
-        path: '/voter-register',
+        path: '/AboutUs',
         description: 'Enroll eligible voters by collecting personal details and capturing face data for verification.',
       }
   ];
@@ -59,12 +55,12 @@ const Homepage = () => {
         <Navbar />
     <div className="home-container">
 
-      <div className="home-content">
+      <div id="home-content">
       <img src={logoImg} alt="Logo" className="logo-imgs" onClick={() => navigate('/home')} />
         <h2 className="home-title">Face Recognition Smart Voting System</h2>
         <p className="home-subtitle">Welcome to the University of Plymouth user Dashboard Election Portal</p>
         </div>
-        <div className="card-grid">
+        <div id="card-grid">
           {navCards.map((card, index) => (
             <div key={index} className="card">
               <h3>{card.title}</h3>

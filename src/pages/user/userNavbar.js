@@ -25,35 +25,35 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        <img src={logoImg} alt="Logo" className="logo-img" onClick={() => navigate('/home')} />
-        <h1 className="logo-text" onClick={() => navigate('/home')}>NSBM Green University</h1>
+    <nav id="navbar">
+      <div id="navbar-left">
+        <img src={logoImg} alt="Logo" id="logo-img" onClick={() => navigate('/home')} />
+        <h1 id="logo-text" onClick={() => navigate('/home')}>NSBM Green University</h1>
       </div>
 
-      <ul className="nav-links">
+      <ul id="nav-links">
         <li><Link to="/Homepage">Home Page</Link></li>
         <li><Link to="/view">Location</Link></li>
         <li><Link to="/voter-register">Contact</Link></li>
         <li><Link to="/voter-register">About us</Link></li>
       </ul>
 
-      <div className="navbar-right">
+      <div id="navbar-right">
         {user ? (
-          <div className="user-info">
+          <div id="user-info">
             {user.photoURL && showImage && (
               <img
                 src={user.photoURL}
                 alt="User"
-                className="user-img"
+                id="user-img"
                 onError={() => setShowImage(false)} // Hide image if it fails to load
               />
             )}
-            <span className="username">{user.displayName || 'Admin'}</span>
-            <button className="logout-btn" onClick={handleLogout}>Logout</button>
+            <span id="username">{user.displayName || 'Admin'}</span>
+            <button id="logout-btn" onClick={handleLogout}>Logout</button>
           </div>
         ) : (
-          <button className="login-btn" onClick={() => navigate('/')}>Login</button>
+          <button id="login-btn" onClick={() => navigate('/')}>Login</button>
         )}
       </div>
     </nav>
