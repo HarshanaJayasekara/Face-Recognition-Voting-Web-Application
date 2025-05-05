@@ -140,3 +140,8 @@ npm install react-leaflet leaflet
 npm install emailjs-com
 ```
 15. Idea and Complain 
+16. Candidate List
+
+```bash
+pending
+```
