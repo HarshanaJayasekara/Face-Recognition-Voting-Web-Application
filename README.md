@@ -2,6 +2,7 @@
 Face Recognition Voting Web Application
 
              FACE RECOGNITION VOTING SYSTEM
+![Project Poster](assets/Screenshot64.png)
 
 ```bash
 create-react-app final-voting-system
