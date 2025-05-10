@@ -2,7 +2,8 @@
 Face Recognition Voting Web Application
 
              FACE RECOGNITION VOTING SYSTEM
-![Project Poster](assets/Screenshot64.png)
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Screenshot%20(64).png?raw=true)
+
 
 ```bash
 create-react-app final-voting-system
