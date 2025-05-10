@@ -148,5 +148,6 @@ npm install emailjs-com
 pending
 ```
 
-Design Poster
-![qemu-system-i386_9uboZE0RkA]([https://github.com/snethndun/n-cafeteria/assets/72740598/b3a5326b-fe74-4dfb-971c-4993998a36d2](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Screenshot%20(64).png)
+#Design Poster
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Screenshot%20(64).png?raw=true)
+
