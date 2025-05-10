@@ -1,7 +1,5 @@
 # Face-Recognition-Voting-Web-Application
-Face Recognition Voting Web Application
 
-             FACE RECOGNITION VOTING SYSTEM
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Screenshot%20(64).png?raw=true)
 
 
