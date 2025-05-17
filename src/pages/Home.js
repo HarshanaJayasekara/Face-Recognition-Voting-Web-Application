@@ -125,7 +125,7 @@ useEffect(() => {
       <div className="home-content">
       <div className={`hedder ${scrolled ? "blurred" : ""}`}>
             <img src={logoImg} alt="Logo" className="logo-imgs" onClick={() => navigate('/home')} />
-            <h2 className="home-title">Face Recognition Smart Voting System</h2>
+            <h2 className="home-title">University Face Recognition Voting System</h2>
             <p className="home-subtitle">Welcome to the NSBM Admin Election Portal</p>
         </div>
         <div className="card-grid">

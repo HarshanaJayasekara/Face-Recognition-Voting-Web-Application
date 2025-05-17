@@ -63,7 +63,7 @@
   .register-left p {
     margin-top: 10px;
     font-size: 1rem;
-    color: #7b7b7e;
+    color: #ddd;
     font-family: "Cascadia Code", monospace;
   }
   
@@ -158,7 +158,7 @@
   }
   
   .info {
-    color: gray;
+    color: #ccc;
     font-size: 0.8rem;
     font-family: "Cascadia Code", monospace;
   }

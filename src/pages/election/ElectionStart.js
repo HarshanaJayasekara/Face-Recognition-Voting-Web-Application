@@ -33,7 +33,6 @@ const StartElection = ({user, showImage, setShowImage, handleLogout, navCards}) 
       }
     } else {
       setMessage('❌ Incorrect Password');
-      navigate('/VoterIdentify'); //! testing for this code remove <--
     }
   };
 

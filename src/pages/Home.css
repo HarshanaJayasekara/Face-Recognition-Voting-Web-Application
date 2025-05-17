@@ -55,12 +55,10 @@
     left: 10px;
     top: 100px;
     width: 220px;
-    background: #b5ceb017;
     padding: 10px;
     z-index: 2;
     border-radius: 6px;
     position: fixed;
-    border: 1px solid grey;
   }
 
   .my-slider {
@@ -160,10 +158,10 @@
   }
   
   .card {
-    background:#ced4d005;
+    background:#fffffff6;
     padding: 25px;
-    border: 1px solid grey;
-    color: #ffffff;
+    border: 1px solid rgba(236, 236, 236, 0.315);
+    color: #000000;
     max-width: 300px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -173,6 +171,7 @@
   
   .card:hover {
     transform: translateY(-15px);
+    border: rgb(235, 223, 61) 2px solid;
   }
   
   .card h3 {
@@ -187,16 +186,16 @@
     font-size: 14px;
     font-weight: 100;
     margin-bottom: 15px;
-    color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
     font-family: Cascadia Code;
   }
   
   .card button {
     padding: 10px 20px;
-    background-color: #1b4d3e27;
+    background-color: #007bff;
     color: white;
     border-radius: 8px;
-    border: 1px solid grey;
+    border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
     transition: background 0.3s;
     font-family: Cascadia Code;
@@ -319,9 +318,7 @@
     border-radius: 6px;
     height: auto;
     width: auto;
-    background: #d2d3d215;
     position: fixed;
-    border: 1px solid grey;
     right: 0;
     top: 10px;
     height: auto;
@@ -370,9 +367,7 @@
     border-radius: 6px;
     height: auto;
     width: auto;
-    background: #ced4d015;
     position: fixed;
-    border: 1px solid grey;
   
     .profileImg {
       display: flex;

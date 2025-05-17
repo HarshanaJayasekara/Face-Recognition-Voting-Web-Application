@@ -57,7 +57,7 @@ const Homepage = () => {
 
       <div id="home-content">
       <img src={logoImg} alt="Logo" className="logo-imgs" onClick={() => navigate('/home')} />
-        <h2 className="home-title">Face Recognition Smart Voting System</h2>
+        <h2 className="home-title">University Face Recognition Voting System</h2>
         <p className="home-subtitle">Welcome to the University of Plymouth user Dashboard Election Portal</p>
         </div>
         <div id="card-grid">

@@ -39,6 +39,10 @@
   
   .reset-status {
     margin-top: 1rem;
-    font-weight: bold;
+    text-align: center;
+    color: #03c44a;
+    margin-bottom: 20px;
+    font-size: 14px;
   }
-  
+
+    

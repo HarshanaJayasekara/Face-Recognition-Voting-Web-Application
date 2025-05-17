@@ -7,9 +7,8 @@
   height: 78vh;
   margin-top: 100px;
   padding: 14px;
-  background-color: #aaaaaa00;
+  background-color: #ffffff00;
   border-radius: 8px;
-  border: gray solid 1px;
   text-align: center;
 }
 .vote-list::-webkit-scrollbar {
@@ -59,7 +58,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #f9fafb3a;
+  background-color: #ffffff;
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
@@ -68,7 +67,7 @@
 }
 
 .vote-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(202, 22, 22, 0.08);
 }
 
 .vote-image {
@@ -87,21 +86,21 @@
 .vote-name {
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   text-align: left;
   font-family: Cascadia Code;
 }
 
 .vote-party {
   font-size: 14px;
-  color: #d8d8d8;
+  color: #3f3f3f;
   text-align: left;
   font-family: Cascadia Code;
 }
 
 .vote-description {
   font-size: 13px;
-  color: #4b5563;
+  color: #444444;
   margin-top: 4px;
 }
 
@@ -111,4 +110,7 @@
   font-weight: 700;
   color: #10b981;
   min-width: 80px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  border: #10b981 2px solid;
 }

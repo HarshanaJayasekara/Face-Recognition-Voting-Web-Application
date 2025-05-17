@@ -33,9 +33,10 @@ const Navbar = () => {
 
       <ul id="nav-links">
         <li><Link to="/Homepage">Home Page</Link></li>
-        <li><Link to="/view">Location</Link></li>
-        <li><Link to="/voter-register">Contact</Link></li>
-        <li><Link to="/voter-register">About us</Link></li>
+        <li><Link to="/VotingLocations">Location</Link></li>
+        <li><Link to="/RulesGuidelines">Rules</Link></li>
+        <li><Link to="/IdeasComplaints">Contact</Link></li>
+        <li><Link to="/AboutUs">About us</Link></li>
       </ul>
 
       <div id="navbar-right">
@@ -53,7 +54,7 @@ const Navbar = () => {
             <button id="logout-btn" onClick={handleLogout}>Logout</button>
           </div>
         ) : (
-          <button id="login-btn" onClick={() => navigate('/AdminLogin')}>Login</button>
+          <button id="login-btn" onClick={() => navigate('/AdminLogin')}>Admin Login</button>
         )}
       </div>
     </nav>

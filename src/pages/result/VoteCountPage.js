@@ -80,7 +80,7 @@ const VoteCountPage = ({user, showImage, setShowImage, handleLogout, navCards}) 
                 <p className="vote-party">Party: {candidate.party}</p>
               </div>
               <div className="vote-count">
-                <span>{candidate.votes || 0}</span>
+                0<span>{candidate.votes || 0}</span><span> </span>
                 <small>Votes</small>
               </div>
             </div>

@@ -14,14 +14,10 @@ const CandidateList = () => {
   const location = useLocation();
   const voter = location.state?.voter;
 
-  // Redirect if voter data is missing
   useEffect(() => {
-    if (!voter) {
-      navigate("/VoterIdentify");
-    }
+    if (!voter) navigate("/VoterIdentify");
   }, [voter, navigate]);
 
-  // Fetch candidates from Firebase
   useEffect(() => {
     const fetchCandidates = async () => {
       try {
@@ -41,68 +37,58 @@ const CandidateList = () => {
     fetchCandidates();
   }, []);
 
-  // Disable browser back navigation after entering candidate list
   useEffect(() => {
-    const handlePopState = () => {
-      navigate(1); // Forces forward navigation
-    };
+    const handlePopState = () => navigate(1);
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
   }, [navigate]);
 
-  // Filtered candidates
   const filteredCandidates = candidates.filter(candidate =>
     candidate.name?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const handleCardClick = (id) => {
-    navigate(`/CandidateProfile/${id}`, { state: { voter: location.state?.voter } });
-    console.log("Candidate ID from URL:", id);
-
+    navigate(`/CandidateProfile/${id}`, { state: { voter } });
   };
 
   return (
-    <div className="new">
-      <div className="manager-container">
-        <div id="heder">
-          <h2 className="manager-title">Choose Candidate</h2>
+    <div className="candidate-page">
+      <div className="candidate-container">
+        <h2 className="candidate-heading">Choose Your Candidate</h2>
 
-          <input
-            type="text"
-            className="manager-search"
-            id="search"
-            placeholder="Search candidates by name..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+        <input
+          type="text"
+          className="candidate-search"
+          placeholder="Search by candidate name..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
 
-          <div className="heder-card">
-            {loading ? (
-              <p>Loading candidates...</p>
-            ) : filteredCandidates.length === 0 ? (
-              <p>No candidates found.</p>
-            ) : (
-              filteredCandidates.map(candidate => (
-                <div
-                  key={candidate.id}
-                  className="manager-card"
-                  onClick={() => handleCardClick(candidate.id)}
-                  style={{ cursor: "pointer" }}
-                >
-                  <img
-                    src={candidate.image || "https://via.placeholder.com/150"}
-                    alt={candidate.name}
-                    className="manager-img"
-                  />
-                  <div className="manager-details">
-                    <h3 className="manager-name">{candidate.name}</h3>
-                    <p className="manager-party">Party: {candidate.party}</p>
-                    <p className="manager-description">{candidate.description}</p>
-                  </div>
+        <div className="candidate-list">
+          {loading ? (
+            <p>Loading candidates...</p>
+          ) : filteredCandidates.length === 0 ? (
+            <p>No candidates found.</p>
+          ) : (
+            filteredCandidates.map(candidate => (
+              <div
+                key={candidate.id}
+                className="candidate-card"
+                onClick={() => handleCardClick(candidate.id)}
+              >
+                <img
+                  src={candidate.image || "https://via.placeholder.com/150"}
+                  alt={candidate.name}
+                  className="candidate-image"
+                />
+                <div className="candidate-info">
+                  <h3>{candidate.name}</h3>
+                  <p><strong>Party:</strong> {candidate.party}</p>
+                  <p className="candidate-description">{candidate.description}</p>
                 </div>
-              ))
-            )}
-          </div>
+              </div>
+            ))
+          )}
         </div>
       </div>
 

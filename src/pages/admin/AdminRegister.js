@@ -85,7 +85,7 @@ const AdminRegister = () => {
     <div className="register-container">
       <div className="register-left">
         <img src={logo} alt="NSBM Logo" className="logo" />
-        <h1>Welcome to University of Plymouth</h1>
+        <h1>Welcome to University of Plymouth Election</h1>
         <p>This is University of Plymouth’s official platform for election registration. Only administration department members are allowed to register here.</p>
         <div className='log'>
           <p>Already have an account? <Link to="/AdminLogin">Sign in →</Link></p>
@@ -105,7 +105,7 @@ const AdminRegister = () => {
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Enter University Email"
               value={formValues.email}
               onChange={handleChange}
               onBlur={handleBlur}
@@ -118,7 +118,7 @@ const AdminRegister = () => {
             <input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Enter Password"
               value={formValues.password}
               onChange={handleChange}
               onBlur={handleBlur}
@@ -128,18 +128,17 @@ const AdminRegister = () => {
             <p className="info">Password should be at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
 
             {/* Username */}
-            <label>Username*</label>
+            <label>Plymouth ID*</label>
             <input
               type="text"
               name="username"
-              placeholder="Username"
+              placeholder="Plymouth ID Number"
               value={formValues.username}
               onChange={handleChange}
               onBlur={handleBlur}
               className={formErrors.username && touched.username ? 'input-error' : ''}
             />
             {formErrors.username && touched.username && <p className="error">⚠ {formErrors.username}</p>}
-            <p className="info">Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.</p>
 
             {errorMsg && <p className="error mt-2 text-red-500">{errorMsg}</p>}
 
