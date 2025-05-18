@@ -1,0 +1,87 @@
+
+  
+  .form-container {
+    max-width: 700px;
+    margin-top: 50px;
+    border: 1px solid grey;
+    padding: 30px 40px;
+    border-radius: 12px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    font-family: Century Gothic;
+  }
+  
+  .candidate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  
+  .candidate-form label {
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+    font-family: Cascadia Code;
+  }
+
+  .candidate-form input[type="text"],
+  .candidate-form input[type="number"],
+  .candidate-form input[type="file"],
+  .candidate-form textarea {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+    background-color: #f9f9f900;
+    border: 1px solid grey;
+    transition: border-color 0.3s;
+    font-family: Cascadia Code;
+    margin-bottom: 5px;
+  }
+
+  .candidate-form input{
+    font-family: Cascadia Code;
+    color: rgb(255, 255, 255);
+  }
+  
+  .candidate-form input[type="text"]:focus,
+  .candidate-form textarea:focus {
+    border-color: #3bf64b;
+    outline: none;
+  }
+  
+  .candidate-form textarea {
+    resize: vertical;
+  }
+  
+  .candidate-form button {
+    background-color: #ffffff;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid grey;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Cascadia Code;
+  }
+  
+  .candidate-form button:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  .success-msg {
+    margin-top: 16px;
+    color: #16a34a;
+    font-weight: 600;
+    text-align: center;
+    font-size: 12px;
+  }
+  

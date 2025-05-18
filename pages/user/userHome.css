@@ -1,0 +1,57 @@
+
+.cont{
+    width: 90vw;
+    height: 90vh;
+}
+
+.home-container{
+    background: #00000000;
+    border: none;
+    margin-top: 0;
+    height: 80vh;
+}
+
+#home-content{
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    margin-top: 10px;
+    text-align: center;
+
+    h2{
+        color: rgb(255, 255, 255);
+        font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        letter-spacing: -.003em;
+    }
+    p{
+        color: white;
+        font-family: Cascadia Code;
+        font-weight: 200;
+    }
+    img{
+        margin: 10px;
+        height: 70px;
+        width: auto;
+    }
+}
+
+#card-grid{
+    overflow: scroll;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+#card-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+.home-subtitle{
+    margin-bottom: 10px ;
+}

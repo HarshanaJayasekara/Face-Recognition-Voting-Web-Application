@@ -1,0 +1,63 @@
+.rules-guidelines-container{
+    width: 90vw;
+    height: 90vh;
+    background-color: #00000000;
+    border: none;
+    margin-top: 0;
+  }
+  
+
+.rules-page {
+  margin: 20px;
+    padding: 20px;
+    height: 76vh;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 8px;
+
+  }
+
+  .rules-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #00000023;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+
+    h2{
+      font-family: Century Gothic;
+      font-weight: 100;
+    }
+
+    ul{
+      list-style-type: none;
+      li{
+        color: #c0c0c0;
+        font-family: Cascadia Code;
+      }
+    }
+  }
+  
+  h1, h2 {
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 0px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+    color: gray;
+  }
+  
+  .note {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #3999ff9a;
+    font-weight: bold;
+  }
+  

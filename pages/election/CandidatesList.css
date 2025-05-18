@@ -1,0 +1,113 @@
+/* Container Styles */
+
+
+.candidate-page {
+  padding: 2rem;
+}
+
+.candidate-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Heading */
+.candidate-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Century Gothic', sans-serif;
+  color: #ffffff;
+}
+
+/* Search Bar */
+.candidate-search {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Cascadia Code', monospace;
+  background-color: #ffffff;
+}
+
+/* Candidate List */
+.candidate-list {
+  max-height: 65vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+}
+.candidate-list::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+/* Candidate Card */
+.candidate-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  gap: 1rem;
+}
+.candidate-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Candidate Image */
+.candidate-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+/* Candidate Info */
+.candidate-info {
+  flex: 1;
+  font-family: 'Cascadia Code', monospace;
+}
+.candidate-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #111827;
+}
+.candidate-info p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #374151;
+}
+.candidate-description {
+  font-style: italic;
+  color: #555;
+    display: -webkit-box;
+    text-align: left;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .candidate-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .candidate-image {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  .candidate-description {
+    display: none;
+  }
+}

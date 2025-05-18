@@ -1,0 +1,309 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main Container */
+  .register-container {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;               
+    width: 90vw;        
+    color: white;
+    overflow: auto;            
+    padding: 20px;
+    box-sizing: border-box;
+}
+.register-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+  /* Logo Section */
+  .log {
+    text-align: center;
+    color: white;
+  }
+  
+  .log p {
+    margin-bottom: 10px;
+  }
+  
+  .log a {
+    text-decoration: none;
+    color: #0969da;
+  }
+  
+  /* Left Side */
+  .register-left {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .register-left img {
+    width: auto;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  
+  .register-left h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Century Gothic", sans-serif;
+  }
+  
+  .register-left p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ddd;
+    font-family: "Cascadia Code", monospace;
+  }
+  
+  .register-left a {
+    margin-top: 20px;
+    color: #58a6ff;
+    text-decoration: none;
+    font-family: "Cascadia Code", monospace;
+  }
+  
+  .nsbm {
+    text-align: center;
+  }
+  
+  .nsbm img {
+    height: 100px;
+  }
+  
+  h2 {
+    font-family: "Century Gothic", sans-serif;
+  }
+  
+  /* Right Side */
+  .register-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .register-box {
+    padding: 5px 20%;
+    border-radius: 10px;
+  }
+  
+  .register-box h2 {
+    margin: 20px 0;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-family: "Century Gothic", sans-serif;
+  }
+  
+  /* Form Styling */
+  label {
+    display: block;
+    font-size: 0.9rem;
+    margin: 10px 0 5px;
+    font-family: "Cascadia Code";
+  }
+
+  input[type="Email"],
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #858c96;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #c9d1d9;
+    font-family: "Cascadia Code";
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #58a6ff;
+    outline: none;
+  }
+  
+  input.error {
+    border: 1px solid red;
+  }
+  
+  /* Error & Info Messages */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+    font-family: "Cascadia Code", monospace;
+  }
+  
+  .error-message.show {
+    display: block;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8rem;
+  }
+  
+  .info {
+    color: #ccc;
+    font-size: 0.8rem;
+    font-family: "Cascadia Code", monospace;
+  }
+  
+  /* Button */
+  .continue-btn {
+    width: 100%;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: "Cascadia Code";
+  }
+  
+  .continue-btn:hover {
+    background: #1b4d3e;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #ccc;
+  }
+  
+  /* Terms */
+  .terms {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 10px;
+    font-family: "Cascadia Code", monospace;
+  }
+  
+  .terms a {
+    color: #0969da;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Box Border */
+  .form-box {
+    border: 1px solid #858c96;
+    padding: 30px;
+    margin: 10px 0 20px;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  .fot {
+    height: 10px;
+    background-color: #0c0c63;
+  }
+  
+  /* Google Button */
+  .google-sign-up-btn {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #626a74;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Cascadia Code", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+  }
+  
+  .google-sign-up-btn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .google-sign-up-btn:hover {
+    background-color: #1b4d3e;
+  }
+  
+  /* OR Divider */
+  .or-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0;
+    color: #888;
+  }
+  
+  .or-divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1100px) {
+    .register-container {
+      flex-direction: column;
+    }
+  
+    .register-left,
+    .register-right {
+      width: 100%;
+    }
+  
+    .register-right {
+      padding: 10px;
+    }
+  
+    .register-left {
+      align-items: center;
+      padding: 0;
+    }
+  
+    .register-box {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .mute p,
+    .log p,
+    .nsbm img,
+    .fot p {
+      display: none;
+    }
+  
+    .register-left img {
+      display: inline-block;
+    }
+  
+    .nsbm h2 {
+      margin: 0;
+    }
+  
+    .register-left p {
+      padding: 0 60px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 1440px) {
+    .register-right {
+      height: 100vh;
+    }
+  }
+  

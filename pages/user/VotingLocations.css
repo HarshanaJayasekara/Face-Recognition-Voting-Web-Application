@@ -1,0 +1,59 @@
+.voting-locations-page{
+  width: 90vw;
+  height: 90vh;
+}
+
+.voting-locations-map-container{
+  width: auto;
+  height: auto;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+
+.locations-page {
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Century Gothic;
+    
+    font-weight: 200;
+  }
+  
+  p {
+    text-align: center;
+    color: #949494;
+    font-family: Cascadia Code;
+  }
+  
+  .locations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .location-card {
+  }
+  
+  .location-card h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  
+  .location-card p {
+    margin: 5px 0;
+  }
+  
+  iframe {
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
