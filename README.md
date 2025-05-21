@@ -1,5 +1,7 @@
 # Face-Recognition-Voting-Web-Application
-Face Recognition Voting Web Application
+
+Get idea Poster 
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Screenshot%20(64).png?raw=true)
 
 Github link 
 ```bash
@@ -152,10 +154,18 @@ PDF election result download
 npm install jspdf
 pending
 ```
-Admin DashBoard
+Sign Up Page
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Sign%20up.png?raw=true)
+
+#Sign In Page
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Sign%20in.png?raw=true)
+
+#Admin DashBoard
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Admin%20Page.png?raw=true)
+
 Admin, Start the Election
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Election%20Start.png?raw=true)
+
 Registered Voter enters their Uni ID & the system verifies their identity using webcam-based face recognition 
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Voter%20Scanning.png?raw=true)
 Voters select their preferred candidate & submit their Vote
@@ -178,6 +188,4 @@ Rule & guidline
 idea & Complaint page
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Idea%20&%20complaine.png?raw=true)
 
-![qemu-system-i386_9uboZE0RkA]
-![qemu-system-i386_9uboZE0RkA]
 
