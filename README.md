@@ -1,28 +1,39 @@
 # Face-Recognition-Voting-Web-Application
+A secure, modern web-based voting system using face recognition technology for authenticating voters. Built with React, integrated with Firebase, and powered by face-api.js, this application ensures that only verified university students can cast their vote—once per election.
 
-Get idea Poster 
+## Summary
+This project is a university-level Facial Recognition Voting System built using React and Firebase. It allows voters to authenticate using their face and University ID before casting votes. Admins can manage candidates, initiate elections, view results, and more. The system is designed to ensure transparency, accessibility, and fraud prevention during elections.
+
+## Features
+Voter and Candidate Registration with webcam face capture
+Admin Dashboard and Election Management
+Face recognition login for voters using face-api.js
+Candidate listing and profile display
+Voting system with one-time vote tracking
+PDF result download
+Complaint and Idea Submission Module
+Voting location map integration
+Firebase integration for authentication, database, and image storage
+
+## Project Poster
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Screenshot%20(64).png?raw=true)
 
 Github link 
 ```bash
 https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application
 ```
-
-             FACE RECOGNITION VOTING SYSTEM
-
+## Setup & Installation
 ```bash
-create-react-app final-voting-system
+npx create-react-app final-voting-system
 cd final-voting-system
 npm install
-```
-```bash
-npm install react-router-dom
-```
-```bash
-npm install -g firebase-tools
-npm install firebase
+npm install react-router-dom react-webcam react-icons react-leaflet leaflet emailjs-com face-api.js jspdf
 ```
 
+Firebase Setup
+1. Initialize Firebase project
+2. Enable Authentication, Firestore, and Storage
+3. Create firebase.js:
 ## create firebase folder and firebase.js file
 ```bash
 import { initializeApp } from "firebase/app";
@@ -38,12 +49,12 @@ const firebaseConfig = {
 
 const app = initializeApp();
 ```
-firebase-voting-system
-firebase Get start
-* Authentication
-* Firebase Database
-* firebase Storage
-
+4. Run
+```bash
+firebase login
+firebase init
+firebase deploy
+```
 ```bash
 firebase login
 ```
@@ -110,50 +121,17 @@ body {
   justify-content: center; 
 }
 ```
-## pages ->
-1. Admin Register
-2. Admin Login
-3. Home 
-```bash
-npm install react-webcam
-```
-4. Voter Register
-5. Candidate Register
-6. Candidate Manager
-
-```bash
-npm install react-icons
-```
-7. Start Election
-8. Voter Identify
-9. Candidate List
-10. Candidate Profile
-
-```bash
-User Dashboard
-src/pages/user/userHome
-```
-
-11. User Dashboard
-12. Voter list
-
-```bash
-npm install react-leaflet leaflet
-```
-13. Voting Location
-14. Rules and Guidelines
-
-```bash
-npm install emailjs-com
-```
-15. Idea and Complain 
-16. Candidate List
-
-PDF election result download
-```bash
-npm install jspdf
-pending
-```
+##  Pages Overview
+1. Admin Register & Login
+2. Admin Dashboard
+3. Voter & Candidate Registration
+4. Start Election
+5. Voter Identify (Face Recognition)
+6. Candidate List & Profile
+7. Voting Result
+8. Complaint & Feedback Form
+9. Election Rules & Location
+    
 ## Sign Up Page
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Sign%20up.png?raw=true)
 
@@ -191,4 +169,9 @@ pending
 ## idea & Complaint page
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Idea%20&%20complaine.png?raw=true)
 
+---
+
+👨‍💻 Developed By  
+**Harshana Jayasekara**  
+[GitHub](https://github.com/HarshanaJayasekara) | [Portfolio](https://harshanajayasekara.github.io/) | [LinkedIn](https://www.linkedin.com/in/harshana-jayasekara/)
 
