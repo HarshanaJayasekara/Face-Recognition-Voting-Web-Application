@@ -154,38 +154,41 @@ PDF election result download
 npm install jspdf
 pending
 ```
-Sign Up Page
+## Sign Up Page
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Sign%20up.png?raw=true)
 
-#Sign In Page
+## Sign In Page
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Sign%20in.png?raw=true)
 
-#Admin DashBoard
+## Admin DashBoard
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Admin%20Page.png?raw=true)
 
-Admin, Start the Election
+## Admin, Start the Election
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Election%20Start.png?raw=true)
 
-Registered Voter enters their Uni ID & the system verifies their identity using webcam-based face recognition 
+## Registered Voter enters their Uni ID & the system verifies their identity using webcam-based face recognition 
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Voter%20Scanning.png?raw=true)
-Voters select their preferred candidate & submit their Vote
+
+## Voters select their preferred candidate & submit their Vote
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Candidate%20list.png?raw=true)
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Candidate%20Profile.png?raw=true)
-Electin Result page & Download a PDF or text file
+
+## Electin Result page & Download a PDF or text file
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Election%20Result.png?raw=true)
-Candidate management: Add/Edit/Remove
+
+## Candidate management: Add/Edit/Remove
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Candidate%20Manage.png?raw=true)
-Candidate Registration 
+## Candidate Registration 
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Candidate%20Manage.png?raw=true)
-User Home page
+## User Home page
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/User%20Home%20page.png?raw=true)
-Voter list 
+## Voter list 
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Voter%20list.png?raw=true)
-Election Location
+## Election Location
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Elaction%20Lcation.png?raw=true)
-Rule & guidline 
+## Rule & guidline 
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Rules%20page.png?raw=true)
-idea & Complaint page
+## idea & Complaint page
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Idea%20&%20complaine.png?raw=true)
 
 
