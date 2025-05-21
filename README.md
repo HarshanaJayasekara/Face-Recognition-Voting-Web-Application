@@ -68,13 +68,59 @@ public folder add to face-api.js Module folder
 ```bash
 npm install face-api.js
 ```
-face api model
-public/module
+## Directory Structure
+```bash
+src/
+├── firebase/
+│   └── firebaseConfig.js
+├── pages/
+│   ├── AdminLogin.js
+│   ├── AdminRegister.js
+│   ├── CandidateManager.js
+│   ├── CandidateProfile.js
+│   ├── CandidateRegister.js
+│   ├── ElectionStart.js
+│   ├── Home.js
+│   ├── RulesGuidelines.js
+│   ├── UserDashboard.js
+│   ├── VoterIdentify.js
+│   ├── VoterRegister.js
+│   ├── VoterList.js
+│   └── VotingPage.js
+├── assets/
+│   └── images/
+│       └── bg.jpg
+├── App.js
+└── index.js
+```
+## Face Recognition Setup
+1. Place face-api.js models inside public/models/.
+2. Load the models before webcam face recognition is used.
 
-file location
-src/firebase/firebaseConfig.js
-src/assets/images
+## Map Integration
+Add election location using Leaflet:
+```bash
+npm install react-leaflet leaflet
+```
+Configure with:
+```bash
+<MapContainer center={[latitude, longitude]} zoom={13}>
+  <TileLayer
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  <Marker position={[latitude, longitude]} />
+</MapContainer>
+```
+## Email Feedback
+Enable EmailJS for feedback/complaints:
+```bash
+npm install emailjs-com
+```
+```bash
+import emailjs from 'emailjs-com';
+```
 
+For Additional 
 ```bash
 App.js
 function App() {
@@ -131,7 +177,10 @@ body {
 7. Voting Result
 8. Complaint & Feedback Form
 9. Election Rules & Location
-    
+
+   
+# Sample Pages Preview
+
 ## Sign Up Page
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Sign%20up.png?raw=true)
 
