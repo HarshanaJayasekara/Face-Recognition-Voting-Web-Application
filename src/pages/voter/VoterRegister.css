@@ -35,13 +35,15 @@
   font-family: 'Century Gothic', sans-serif;
   font-size: 26px;
   margin-bottom: 8px;
-  color: #19191a;
+  color: #ffffff;
+  
 }
 
 .form-section p {
   font-family: 'Cascadia Code', monospace;
   font-size: 15px;
   margin-bottom: 25px;
+  color: rgb(187, 187, 187);
 }
 
 .form-grid {
@@ -59,7 +61,7 @@
   font-size: 16px;
   outline: none;
   transition: border 0.2s ease;
-  background-color: #ffffff18;
+  background-color: #dcdcdc;
 }
 
 .form-grid input:focus {
@@ -171,4 +173,20 @@
 
 .error-msg {
   color: #e74c3c;
+}
+
+.overlay-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+.webcam {
+  position: relative;
+  z-index: 1;
+}
+.camera-section {
+  position: relative;
 }

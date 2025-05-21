@@ -1,7 +1,7 @@
 # Face-Recognition-Voting-Web-Application
+Face Recognition Voting Web Application
 
-![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Screenshot%20(64).png?raw=true)
-
+             FACE RECOGNITION VOTING SYSTEM
 
 ```bash
 create-react-app final-voting-system
@@ -142,10 +142,8 @@ npm install emailjs-com
 15. Idea and Complain 
 16. Candidate List
 
+pdf election result download
 ```bash
+npm install jspdf
 pending
 ```
-
-#Design Poster
-![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Screenshot%20(64).png?raw=true)
-

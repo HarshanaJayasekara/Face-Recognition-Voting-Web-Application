@@ -80,7 +80,7 @@ const Candidators = ({}) => {
     <div id="new">
       
       <div id="heder">
-      <h2 className="manager-title">Candidate Manager</h2>
+      <h2 className="manager-title">Candidate Profile</h2>
 
       <input
         type="text"

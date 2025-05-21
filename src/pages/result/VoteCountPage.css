@@ -114,3 +114,44 @@
   border-radius: 10px;
   border: #10b981 2px solid;
 }
+
+
+.vote-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-pdf,
+.btn-txt {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-pdf {
+  background-color: #e74c3c;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.btn-txt {
+  background-color: #3498db;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.btn-csv {
+  background-color: #2ecc71;
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

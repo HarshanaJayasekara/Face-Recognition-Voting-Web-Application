@@ -72,6 +72,7 @@
   
     .manager-card.expanded {
       height: auto;
+      background-color: #0e0e27e0;
     }
     
     .manager-img {

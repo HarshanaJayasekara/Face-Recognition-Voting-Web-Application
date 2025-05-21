@@ -50,14 +50,14 @@ useEffect(() => {
       description: 'Enroll eligible voters by collecting personal details and capturing face data for verification.',
     },
     {
+      title: 'Voter List',
+      path: '/VoterList',
+      description: 'Overview of system statistics including registration counts and election status.',
+    },
+    {
       title: 'Candidate Registration',
       path: '/CandidateRegister',
       description: 'Register candidates with complete profile information, including manifesto and facial recognition.',
-    },
-    {
-      title: 'Start Election',
-      path: '/StartElection',
-      description: 'Initiate the election process with admin-level authentication and controls.',
     },
     {
       title: 'Candidate Manager',
@@ -65,18 +65,18 @@ useEffect(() => {
       description: 'View a list of all registered candidates with their respective details.',
     },
     {
+      title: 'Start Election',
+      path: '/StartElection',
+      description: 'Initiate the election process with admin-level authentication and controls.',
+    },
+    {
       title: 'Election Results',
       path: '/VoteCountPage',
       description: 'View real-time voting results and final election summaries.',
     },
     {
-      title: 'Voter LeadersRegister',
-      path: '/LeadersRegister',
-      description: 'Browse and manage records of all registered voters in the system.',
-    },
-    {
-      title: 'Edit Profiles',
-      path: '/LeaderList',
+      title: 'Candidators Profiles',
+      path: '/Candidators',
       description: 'Update and manage voter and candidate profiles securely.',
     },
     {
@@ -85,20 +85,11 @@ useEffect(() => {
       description: 'Overview of system statistics including registration counts and election status.',
     },
     {
-      title: 'Edit Profiles',
-      path: '/LeaderList',
-      description: 'Update and manage voter and candidate profiles securely.',
-    },
-    {
-      title: 'reset-election',
-      path: '/reset-election',
-      description: 'Overview of system statistics including registration counts and election status.',
-    },
-    {
-      title: 'Start Election',
-      path: '/start-election',
-      description: 'Initiate the election process with admin-level authentication and controls.',
-    },
+      title: 'Location',
+      path: '/VotingLocations',
+      description: 'Browse and manage records of all registered voters in the system.',
+    }
+    
   ];
   
   
@@ -170,7 +161,7 @@ useEffect(() => {
               <h5>Rules & Conditions</h5>
               <p>• All voters must be registered with a valid University ID and face verification.</p>
               <p>• Each voter is allowed to vote only once during the election period.</p>
-              <p>• Candidates must submit accurate personal information and a valid manifesto.</p>
+              
               <p>• Face recognition must match the registered profile for both voters and candidates.</p>
               <p>• Candidates must submit accurate personal information and a valid manifesto.</p>
               <p>• Face recognition must match the registered profile for both voters and candidates.</p>

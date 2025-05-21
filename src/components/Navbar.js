@@ -33,12 +33,10 @@ const Navbar = () => {
 
       <ul className="nav-links">
         <li><Link to="/home">Home</Link></li>
-        <li><Link to="/view">Admin</Link></li>
-        <li><Link to="/voter-register">Facalty</Link></li>
-        <li><Link to="/table">Location</Link></li>
-        <li><Link to="/find">Update</Link></li>
-        <li><Link to="/upload-students">Contact</Link></li>
-        <li><Link to="/upload-lecturers">About Us</Link></li>
+        <li><Link to="/CandidateManager">Candidator</Link></li>
+        <li><Link to="/VoterList">Voter</Link></li>
+        <li><Link to="/VotingLocations">Map</Link></li>
+        <li><Link to="/VoteCountPage">Result</Link></li>
       </ul>
 
       <div className="navbar-right">

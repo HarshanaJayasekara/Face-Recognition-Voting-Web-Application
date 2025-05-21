@@ -15,28 +15,7 @@ const LeftSidebar = () => {
       title: 'Voter LeadersRegister',
       path: '/LeadersRegister',
       description: 'Browse and manage records of all registered voters in the system.',
-    },
-    {
-      title: 'Edit Profiles',
-      path: '/LeaderList',
-      description: 'Update and manage voter and candidate profiles securely.',
-    },
-    
-    {
-      title: 'Edit Profiles',
-      path: '/LeaderList',
-      description: 'Update and manage voter and candidate profiles securely.',
-    },
-    {
-      title: 'reset-election',
-      path: '/reset-election',
-      description: 'Overview of system statistics including registration counts and election status.',
-    },
-    {
-      title: 'Start Election',
-      path: '/start-election',
-      description: 'Initiate the election process with admin-level authentication and controls.',
-    },
+    }
   ];
 
 
