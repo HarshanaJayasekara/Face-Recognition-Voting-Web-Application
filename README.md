@@ -152,3 +152,5 @@ pdf election result download
 npm install jspdf
 pending
 ```
+Admin DashBoard
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Admin%20Page.png?raw=true)
