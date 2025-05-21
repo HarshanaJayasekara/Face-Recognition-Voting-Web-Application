@@ -139,7 +139,7 @@ src/pages/user/userHome
 npm install react-leaflet leaflet
 ```
 13. Voting Location
-14. Rules and Guideline
+14. Rules and Guidelines
 
 ```bash
 npm install emailjs-com
@@ -147,10 +147,37 @@ npm install emailjs-com
 15. Idea and Complain 
 16. Candidate List
 
-pdf election result download
+PDF election result download
 ```bash
 npm install jspdf
 pending
 ```
 Admin DashBoard
 ![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Admin%20Page.png?raw=true)
+Admin, Start the Election
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Election%20Start.png?raw=true)
+Registered Voter enters their Uni ID & the system verifies their identity using webcam-based face recognition 
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Voter%20Scanning.png?raw=true)
+Voters select their preferred candidate & submit their Vote
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Candidate%20list.png?raw=true)
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Candidate%20Profile.png?raw=true)
+Electin Result page & Download a PDF or text file
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Election%20Result.png?raw=true)
+Candidate management: Add/Edit/Remove
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Candidate%20Manage.png?raw=true)
+Candidate Registration 
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Candidate%20Manage.png?raw=true)
+User Home page
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/User%20Home%20page.png?raw=true)
+Voter list 
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Voter%20list.png?raw=true)
+Election Location
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Elaction%20Lcation.png?raw=true)
+Rule & guidline 
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Rules%20page.png?raw=true)
+idea & Complaint page
+![qemu-system-i386_9uboZE0RkA](https://github.com/HarshanaJayasekara/Face-Recognition-Voting-Web-Application/blob/main/assets/Idea%20&%20complaine.png?raw=true)
+
+![qemu-system-i386_9uboZE0RkA]
+![qemu-system-i386_9uboZE0RkA]
+
